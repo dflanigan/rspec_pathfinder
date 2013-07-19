@@ -1,12 +1,12 @@
 
-require "spoke_a"
+require "spoke_b"
 
 require "spoke_shared"
 
-describe SpokeA  do
+describe SpokeB  do
 
   before(:all)  do
-     @spoke = SpokeA.new()
+   @spoke = SpokeB.new()
   end
 
   it "can be created"  do
@@ -15,9 +15,9 @@ describe SpokeA  do
 
 
   it "name should be spoke_a" do
-    @spoke.name.should == "spoke_a"
+    @spoke.name.should == "spoke_b"
   end
 
-  it_should_behave_like "any spoke", "spoke_a"
+  it_should_behave_like "any spoke", "spoke_b"
 
 end
